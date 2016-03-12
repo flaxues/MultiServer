@@ -1,5 +1,7 @@
 # MultiServer <em>for PocketMine-MP</em>
 
+Notice: This uses the api of a really old pocketmine version and is made for minecraft version ~0.6.1!
+
 Break the limit of 4 servers in [PocketMine-MP](https://github.com/shoghicp/PocketMine-MP) using this plugin!
 
 
