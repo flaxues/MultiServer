@@ -70,7 +70,7 @@ class MultiServer implements Plugin{
 		}
 	}
 	
-	public function command($cmd, $params, $issuer, $alias){
+	public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
 		$output = "";
 		switch($cmd){
 			case "multiadd":
@@ -79,7 +79,7 @@ class MultiServer implements Plugin{
 					break;
 				}
 				if(!isset($params[0])){
-					$output .= "Usage: /multiadd <port> [host]\n";
+					$output = "Usage: /multiadd <port> [host]\n";
 					break;
 				}
 				$port = (int) $params[0];
